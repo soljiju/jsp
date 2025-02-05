@@ -4,11 +4,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>3.for</title>
-		<%--
+	<!-- 
 		날짜 : 2025/02/03
 		이름 : 주솔지
-		내용 : JSP 조건문 실습하기
-	 --%> 
+		내용 : JSP 반복문 실습하기
+	 -->
 </head>
 <body>
 	<h3>JSP 반복문</h3>
@@ -17,22 +17,20 @@
 	<%
 		for(int i=0 ; i<5 ; i++){
 			out.println("<p>i : " + i + "</p>");
-			
 		}
 	%>
-	<% for(int k=0 ; k<5 ; k++){ %>
-		<p> k : <%= k %></p>
 	
+	<% for(int k=0 ; k<5 ; k++){ %>
+		<p>k : <%= k %></p>
 	<% } %>
 	
 	<h4>while</h4>
 	<%
 		int j = 1;
 		
-		while(j <=5){
-	
+		while(j <= 5){
 	%>
-		<p>j: <%= j %><p>
+		<p>j : <%= j %></p>
 	<%
 			j++;
 		}
@@ -51,20 +49,13 @@
 			<th>9단</th>
 		</tr>
 		
+		<% for(int a=1 ; a<=9 ; a++){ %>
 		<tr>
-			<tb>2 x 1 = 2</tb>
-			<tb>2 x 2 = 4</tb>
-			<tb>2 x 3 = 6</tb>
-			<tb>2 x 4 = 8</tb>
-			<tb>2 x 5 = 10</tb>
-			<tb>2 x 6 = 12</tb>
-			<tb>2 x 7 = 14</tb>
-			<tb>2 x 8 = 16</tb>
-			<tb>2 x 9 = 18</tb>
-		
-
-	
-	
+			<% for(int b=2 ; b<=9 ; b++){ %>
+			<td><%= b %> x <%= a %> = <%= a*b %></td>
+			<% } %>
+		</tr>
+		<% } %>
 	</table>
 </body>
 </html>
