@@ -10,9 +10,8 @@
 	<%
 		int num1 = 1;
 		int num2 = 0;
-	
-		int resutl = num1 / num2;
-	
+		
+		int result = num1 / num2;
 	%>
 	<p>
 		결과 : <%= result %>
