@@ -5,3 +5,6 @@
                 <span class="version">v1.0.1</span>
             </p>
         </footer>
+    </div>    
+</body>
+</html>
