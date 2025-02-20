@@ -6,7 +6,7 @@ public class SQL {
 	public static final String SELECT_TERMS = "select * from `terms` where `no`=?";
 	
 	// user
-	public static final String SELECT_COUNT_USER = "select COUNT(*) from `user` where `user` ";
+	public static final String SELECT_COUNT_USER = "select COUNT(*) from `user` ";
 	public static final String WHERE_UID = "where `uid`=?";
 	public static final String WHERE_NICK = "where `nick`=?";
 	public static final String WHERE_EMAIL = "where `email`=?";
@@ -26,4 +26,13 @@ public class SQL {
 											+ "`regip`=?,"
 											+ "`regDate`=NOW()";
 
+	// article
+	public static final String INSERT_ARTICLE = "insert into `article` set "
+													+ "`title`=?,"
+													+ "`content`=?,"
+													+ "`writer`=?,"
+													+ "`regip`=?,"
+													+ "`wdate`=NOW()";
+	
+	
 }
